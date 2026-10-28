@@ -1,6 +1,5 @@
-// Replace these two values with the public release URLs when they are ready.
-// Until then both resource links return to this project page.
+// Public research links. The code release URL will be added when available.
 window.BOXWORLD_LINKS = {
-  paper: '#top',
+  paper: 'https://arxiv.org/abs/2610.36371',
   github: '#top'
 };

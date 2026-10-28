@@ -16,8 +16,8 @@
   <link rel="canonical" href="https://boxworld-web.github.io/">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preload" href="assets/fonts/InterDisplay-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=bb2e03134760">
-  <script src="site-config.js?v=1098edf4db42" defer></script>
+  <link rel="stylesheet" href="styles.css?v=65f68edbfc4b">
+  <script src="site-config.js?v=2a0189821f60" defer></script>
   <script src="app.js?v=c518fa61d051" defer></script>
 </head>
 <body>
@@ -28,7 +28,7 @@
       <span>BoxWorld</span>
     </a>
     <nav class="desktop-nav" aria-label="Main navigation"><a href="#method">Method</a><a href="#examples">Examples</a><a href="#gallery">Gallery</a></nav>
-    <div class="header-resources"><a class="header-paper" href="#top" data-resource="paper">Paper <span aria-hidden="true">↗</span></a><a class="header-paper header-github" href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a></div>
+    <div class="header-resources"><a class="header-paper" href="https://arxiv.org/abs/2610.36371" data-resource="paper">Paper <span aria-hidden="true">↗</span></a><a class="header-paper header-github" href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a></div>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#method">Method</a><a href="#examples">Examples</a><a href="#gallery">Gallery</a><a href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a></nav>
   </header>
@@ -45,7 +45,7 @@
         <p class="hero-description">You define the rules.<br>The engine controls what happens.<br>The video model brings it to life.</p>
         <div class="hero-actions">
           <a class="button button-dark" href="assets/boxworld-demo.mp4" data-dialog-video="assets/boxworld-demo.mp4" data-poster="assets/demo-poster.jpg" data-title="BoxWorld overview" data-caption="From rules to box states to generated worlds · 84 s" data-category="Overview video"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6V4Z" fill="currentColor"/></svg> Watch the video</a>
-          <a class="button button-outline" href="#top" data-resource="paper">Paper <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="https://arxiv.org/abs/2610.36371" data-resource="paper">Paper <span aria-hidden="true">↗</span></a>
           <a class="button button-outline" href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a>
         </div>
       </div>
@@ -68,7 +68,7 @@
           <div class="pipeline-arrow" aria-hidden="true">→</div>
           <article class="pipeline-step render-step"><div class="step-index">03 <span>Render</span></div><h3>Generative renderer</h3><p>A causal video model renders each new state in the context of its history.</p><img src="assets/thumbnails/garden.webp" width="832" height="480" alt="Generated greenhouse world with a drone and lotus" loading="lazy"><div class="pipeline-label">Updated state <span aria-hidden="true">→</span> Video frame</div></article>
         </div>
-        <div class="grounding-explainer"><div><p class="eyebrow">Inside the renderer</p><h3>The right state,<br>in the right place.</h3></div><div><p>Frame-wise masked cross-attention routes an object’s state to the visual regions covered by its box. Persistent attributes describe <em>what it is</em>; dynamic status describes <em>what is happening now</em>.</p><a class="text-link" href="#top" data-resource="paper">Read the method <span aria-hidden="true">↗</span></a></div></div>
+        <div class="grounding-explainer"><div><p class="eyebrow">Inside the renderer</p><h3>The right state,<br>in the right place.</h3></div><div><p>Frame-wise masked cross-attention routes an object’s state to the visual regions covered by its box. Persistent attributes describe <em>what it is</em>; dynamic status describes <em>what is happening now</em>.</p><a class="text-link" href="https://arxiv.org/abs/2610.36371" data-resource="paper">Read the method <span aria-hidden="true">↗</span></a></div></div>
         <div class="training-strip"><div><span class="training-number">I</span><h4>Ground objects</h4><p>Learn spatial grounding from automatically annotated open-domain videos.</p></div><div><span class="training-number">II</span><h4>Learn state changes</h4><p>Adapt to object transitions using gameplay videos and clean visual history.</p></div><div><span class="training-number">III</span><h4>Practice rollouts</h4><p>Distill on self-generated histories for coherent, few-step streaming generation.</p></div></div>
       </div>
     </section>
@@ -167,7 +167,19 @@
         </div>
     </section>
 
-    <section class="paper-section wrap" aria-labelledby="paper-title"><div><p class="eyebrow">Explore the research</p><h2 id="paper-title">Let world engines control.<br>Let video generators render.</h2></div><div class="paper-actions"><a class="button button-dark" href="#top" data-resource="paper">Read the paper <span aria-hidden="true">↗</span></a><a class="text-link" href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a><a class="text-link" href="assets/boxworld-demo.mp4" download="BoxWorld_ProjectPage.mp4">Download the video <span aria-hidden="true">↓</span></a></div></section>
+    <section class="paper-section wrap" aria-labelledby="paper-title"><div><p class="eyebrow">Explore the research</p><h2 id="paper-title">Let world engines control.<br>Let video generators render.</h2></div><div class="paper-actions"><a class="button button-dark" href="https://arxiv.org/abs/2610.36371" data-resource="paper">Read the paper <span aria-hidden="true">↗</span></a><a class="text-link" href="#top" data-resource="github"><span>GitHub <span class="soon">(coming soon)</span></span></a><a class="text-link" href="https://arxiv.org/pdf/2610.36371">PDF <span aria-hidden="true">↗</span></a><a class="text-link" href="#citation">BibTeX <span aria-hidden="true">↓</span></a><a class="text-link" href="assets/boxworld-demo.mp4" download="BoxWorld_ProjectPage.mp4">Download the video <span aria-hidden="true">↓</span></a></div></section>
+    <section class="citation-section wrap" id="citation" aria-labelledby="citation-title">
+      <div class="citation-heading"><h2 id="citation-title">BibTeX</h2><a class="text-link" href="assets/boxworld.bib" download="boxworld.bib">Download .bib <span aria-hidden="true">↓</span></a></div>
+      <pre><code>@misc{wu2026boxworldletworldengines,
+  title={BoxWorld: Let World Engines Control and Video Generators Render},
+  author={Zike Wu and Ahmed Hatem and Chintan Trivedi and Wallace Michel Pinto Lira and Xuebin Qin and Lele Wang and Renjie Liao},
+  year={2026},
+  eprint={2610.36371},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.36371},
+}</code></pre>
+    </section>
   </main>
   <dialog id="demo-dialog" aria-labelledby="demo-dialog-title">
     <div class="demo-dialog-inner"><div class="demo-dialog-heading"><div><p class="eyebrow" id="demo-dialog-category">Example</p><h2 id="demo-dialog-title">BoxWorld example</h2></div><button type="button" id="demo-close" aria-label="Close video">×</button></div><video id="demo-player" controls playsinline preload="none" aria-label="Selected video"></video><div class="demo-dialog-bottom"><p id="demo-dialog-caption"></p><a id="demo-open-file" class="text-link" href="#gallery" target="_blank" rel="noopener">Open video <span aria-hidden="true">↗</span></a></div></div>
